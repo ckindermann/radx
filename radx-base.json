@@ -1,0 +1,29 @@
+{
+  "graphs" : [ {
+    "id" : "http://purl.obolibrary.org/obo/radx/radx-base.json",
+    "meta" : {
+      "basicPropertyValues" : [ {
+        "pred" : "http://purl.org/dc/elements/1.1/type",
+        "val" : "http://purl.obolibrary.org/obo/IAO_8000001"
+      }, {
+        "pred" : "http://purl.org/dc/terms/description",
+        "val" : "None"
+      }, {
+        "pred" : "http://purl.org/dc/terms/license",
+        "val" : "https://creativecommons.org/licenses/unspecified"
+      }, {
+        "pred" : "http://purl.org/dc/terms/title",
+        "val" : "RADx-demo"
+      }, {
+        "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
+        "val" : "2024-03-11"
+      } ],
+      "version" : "http://purl.obolibrary.org/obo/radx/releases/2024-03-11/radx-base.json"
+    },
+    "nodes" : [ {
+      "id" : "http://purl.obolibrary.org/obo/RADX_0000000",
+      "lbl" : "root node",
+      "type" : "CLASS"
+    } ]
+  } ]
+}
