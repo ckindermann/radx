@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/radx
+
+idspace: RADX
+base_url: /obo/radx
+
+products:
+- radx.owl: https://raw.githubusercontent.com/ckindermann/radx-demo/main/radx.owl
+- radx.obo: https://raw.githubusercontent.com/ckindermann/radx-demo/main/radx.obo
+
+term_browser: ontobee
+example_terms:
+- RADX_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/ckindermann/radx-demo/v
+
+- prefix: /tracker/
+  replacement: https://github.com/ckindermann/radx-demo/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/RADX?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/ckindermann/radx-demo/main/
+
