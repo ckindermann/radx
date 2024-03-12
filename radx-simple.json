@@ -13,9 +13,9 @@
         "val" : "RADx-demo"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-03-11"
+        "val" : "2024-03-12"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/radx/releases/2024-03-11/radx-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/radx/releases/2024-03-12/radx-simple.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/RADX_0000000",

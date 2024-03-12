@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: radx/releases/2024-03-11/radx-base.owl
+data-version: radx/releases/2024-03-12/radx-base.owl
 ontology: radx/radx-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "RADx-demo" xsd:string
-property_value: owl:versionInfo "2024-03-11" xsd:string
+property_value: owl:versionInfo "2024-03-12" xsd:string
 
 [Term]
 id: RADX:0000000

@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/radx/imports/ncit_import.owl>
-<http://purl.obolibrary.org/obo/radx/releases/2024-03-11/imports/ncit_import.owl>
+<http://purl.obolibrary.org/obo/radx/releases/2024-03-12/imports/ncit_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ncit/releases/2023-10-19/ncit.owl>)
-Annotation(owl:versionInfo "2024-03-11")
+Annotation(owl:versionInfo "2024-03-12")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C100104>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C111629>))
@@ -37,6 +37,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C16326>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C16527>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C165593>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C16564>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C16669>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C16745>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C16960>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C17005>))
@@ -81,12 +82,15 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C20181>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C20188>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C20189>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C20993>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C21007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C221>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C25162>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C25172>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C25190>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C25218>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C25404>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C25621>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C25688>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C25720>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C26683>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C26940>))
@@ -136,6 +140,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C84367>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C91102>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C92720>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C9305>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C95018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C95544>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C95549>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C97325>))
@@ -168,6 +173,7 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/NCIT_C103080>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/NCIT_C103330>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/NCIT_C104593>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/NCIT_C105551>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/NCIT_C105763>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/NCIT_C107391>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/NCIT_C111620>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/NCIT_C116977>))
@@ -290,6 +296,7 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/NCIT_C201253>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/NCIT_C201258>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/NCIT_C54447>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/NCIT_C54450>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/NCIT_C54583>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/NCIT_C54584>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/NCIT_C54596>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/NCIT_C61410>))
@@ -397,6 +404,10 @@ SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/NCIT_C104593> <http://ww
 # Annotation Property: <http://purl.obolibrary.org/obo/NCIT_C105551> (<http://purl.obolibrary.org/obo/NCIT_C105551>)
 
 SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/NCIT_C105551> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/NCIT_C105763> (<http://purl.obolibrary.org/obo/NCIT_C105763>)
+
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/NCIT_C105763> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/NCIT_C107391> (<http://purl.obolibrary.org/obo/NCIT_C107391>)
 
@@ -885,6 +896,10 @@ SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/NCIT_C54447> <http://www
 # Annotation Property: <http://purl.obolibrary.org/obo/NCIT_C54450> (<http://purl.obolibrary.org/obo/NCIT_C54450>)
 
 SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/NCIT_C54450> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/NCIT_C54583> (<http://purl.obolibrary.org/obo/NCIT_C54583>)
+
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/NCIT_C54583> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/NCIT_C54584> (<http://purl.obolibrary.org/obo/NCIT_C54584>)
 
@@ -1653,6 +1668,25 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/NCIT_C16564> <http://purl.obolibrary.org/obo/NCIT_C90259>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C16564> "Ethnic Group")
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C16564> <http://purl.obolibrary.org/obo/NCIT_C161324>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C16669> (Health Status)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P378> "NCI") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NCIT_C16669> "The state of a subject's mental or physical condition.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_NHC0> <http://purl.obolibrary.org/obo/NCIT_C16669> "C16669")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P106> <http://purl.obolibrary.org/obo/NCIT_C16669> "Organism Attribute")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P108> <http://purl.obolibrary.org/obo/NCIT_C16669> "Health Status")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P207> <http://purl.obolibrary.org/obo/NCIT_C16669> "C0018759")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P322> <http://purl.obolibrary.org/obo/NCIT_C16669> "CDISC")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P378> "CDISC") <http://purl.obolibrary.org/obo/NCIT_P325> <http://purl.obolibrary.org/obo/NCIT_C16669> "The state of a subject's mental or physical condition.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P366> <http://purl.obolibrary.org/obo/NCIT_C16669> "Health_Status")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P383> "PT") Annotation(<http://purl.obolibrary.org/obo/NCIT_P384> "CDISC") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCIT_C16669> "General Health Status")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P383> "PT") Annotation(<http://purl.obolibrary.org/obo/NCIT_P384> "NCI") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCIT_C16669> "Health Status")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/NCIT_C16669> <http://purl.obolibrary.org/obo/NCIT_C132298>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/NCIT_C16669> <http://purl.obolibrary.org/obo/NCIT_C160921>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/NCIT_C16669> <http://purl.obolibrary.org/obo/NCIT_C61410>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C16669> "Health Status")
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C16669> <http://purl.obolibrary.org/obo/NCIT_C19332>)
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C16669> <http://purl.obolibrary.org/obo/NCIT_C25688>)
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C16745> (Insurance)
 
@@ -6779,6 +6813,40 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C20993> "Research or Clinical Assessment Tool")
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C20993> <http://purl.obolibrary.org/obo/NCIT_C18742>)
 
+# Class: <http://purl.obolibrary.org/obo/NCIT_C21007> (Disability)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P378> "NCI") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NCIT_C21007> "Any physical or mental impairment that interferes with an individual's ability to perform desired activities.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_A42> <http://purl.obolibrary.org/obo/NCIT_C21007> <http://purl.obolibrary.org/obo/NCIT_C116921>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_A42> <http://purl.obolibrary.org/obo/NCIT_C21007> <http://purl.obolibrary.org/obo/NCIT_C192619>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_A42> <http://purl.obolibrary.org/obo/NCIT_C21007> <http://purl.obolibrary.org/obo/NCIT_C192620>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_A42> <http://purl.obolibrary.org/obo/NCIT_C21007> <http://purl.obolibrary.org/obo/NCIT_C50458>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_A42> <http://purl.obolibrary.org/obo/NCIT_C21007> <http://purl.obolibrary.org/obo/NCIT_C50576>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_A42> <http://purl.obolibrary.org/obo/NCIT_C21007> <http://purl.obolibrary.org/obo/NCIT_C50602>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_NHC0> <http://purl.obolibrary.org/obo/NCIT_C21007> "C21007")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P106> <http://purl.obolibrary.org/obo/NCIT_C21007> "Organism Attribute")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P108> <http://purl.obolibrary.org/obo/NCIT_C21007> "Disability")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P207> <http://purl.obolibrary.org/obo/NCIT_C21007> "C0231170")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P317> <http://purl.obolibrary.org/obo/NCIT_C21007> "Patient Code (Appendix B)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P322> <http://purl.obolibrary.org/obo/NCIT_C21007> "FDA")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P322> <http://purl.obolibrary.org/obo/NCIT_C21007> "OORO")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P378> "FDA") Annotation(<http://purl.obolibrary.org/obo/NCIT_P381> "CDRH") <http://purl.obolibrary.org/obo/NCIT_P325> <http://purl.obolibrary.org/obo/NCIT_C21007> "Any physical or mental impairment that interferes with an individual's ability to perform desired activities.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P378> "OORO") Annotation(<http://purl.obolibrary.org/obo/NCIT_P381> "PC") <http://purl.obolibrary.org/obo/NCIT_P325> <http://purl.obolibrary.org/obo/NCIT_C21007> "High level categorizations of disabilities having an impact on  basic functioning. This is important for research and health care policy using social determinants of health (SDOH).  Values should be as identified by patient.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P366> <http://purl.obolibrary.org/obo/NCIT_C21007> "Disability")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCIT_C21007> "IMDRF:F1202")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P383> "PT") Annotation(<http://purl.obolibrary.org/obo/NCIT_P384> "FDA") Annotation(<http://purl.obolibrary.org/obo/NCIT_P386> "ICSR") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCIT_C21007> "DISABILITY")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P383> "PT") Annotation(<http://purl.obolibrary.org/obo/NCIT_P384> "FDA") Annotation(<http://purl.obolibrary.org/obo/NCIT_P385> "4616") Annotation(<http://purl.obolibrary.org/obo/NCIT_P386> "CDRH") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCIT_C21007> "Disability")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P383> "PT") Annotation(<http://purl.obolibrary.org/obo/NCIT_P384> "NCI") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCIT_C21007> "Disability")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P383> "PT") Annotation(<http://purl.obolibrary.org/obo/NCIT_P384> "OORO") Annotation(<http://purl.obolibrary.org/obo/NCIT_P386> "PC") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCIT_C21007> "Disability")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P383> "SY") Annotation(<http://purl.obolibrary.org/obo/NCIT_P384> "NCI") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCIT_C21007> "Handicap")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P383> "SY") Annotation(<http://purl.obolibrary.org/obo/NCIT_P384> "NCI") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCIT_C21007> "Infirmity")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/NCIT_C21007> <http://purl.obolibrary.org/obo/NCIT_C171094>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/NCIT_C21007> <http://purl.obolibrary.org/obo/NCIT_C192234>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/NCIT_C21007> <http://purl.obolibrary.org/obo/NCIT_C54447>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/NCIT_C21007> <http://purl.obolibrary.org/obo/NCIT_C54583>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/NCIT_C21007> <http://purl.obolibrary.org/obo/NCIT_C62596>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C21007> "Disability")
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C21007> <http://purl.obolibrary.org/obo/NCIT_C16669>)
+
 # Class: <http://purl.obolibrary.org/obo/NCIT_C221> (Alkaloid)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P378> "NCI") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NCIT_C221> "A family or group of nitrogen-containing base compounds primarily derived from plant and animal sources.  Many alkaloids are used medicinally, including cancer therapy.")
@@ -7024,6 +7092,21 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C25218> "Intervention or Procedure")
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C25218> <http://purl.obolibrary.org/obo/NCIT_C16203>)
 
+# Class: <http://purl.obolibrary.org/obo/NCIT_C25404> (Action)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P378> "NCI") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NCIT_C25404> "A thing done.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_NHC0> <http://purl.obolibrary.org/obo/NCIT_C25404> "C25404")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P106> <http://purl.obolibrary.org/obo/NCIT_C25404> "Activity")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P108> <http://purl.obolibrary.org/obo/NCIT_C25404> "Action")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P207> <http://purl.obolibrary.org/obo/NCIT_C25404> "C3266814")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P366> <http://purl.obolibrary.org/obo/NCIT_C25404> "Action")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P383> "PT") Annotation(<http://purl.obolibrary.org/obo/NCIT_P384> "NCI") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCIT_C25404> "Action")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P383> "SY") Annotation(<http://purl.obolibrary.org/obo/NCIT_P384> "caDSR") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCIT_C25404> "Action")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P383> "SY") Annotation(<http://purl.obolibrary.org/obo/NCIT_P384> "NCI") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCIT_C25404> "Generic Action")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/NCIT_C25404> <http://purl.obolibrary.org/obo/NCIT_C105763>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C25404> "Action")
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C25404> <http://purl.obolibrary.org/obo/NCIT_C43431>)
+
 # Class: <http://purl.obolibrary.org/obo/NCIT_C25621> (Postal Code)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P378> "NCI") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NCIT_C25621> "Any system designed to expedite the sorting and delivery of mail by assigning a series of alphanumeric codes to each delivery area. Also used to refer to any individual delivery area code.")
@@ -7052,6 +7135,24 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/NCIT_C25621> <http://purl.obolibrary.org/obo/NCIT_C90259>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C25621> "Postal Code")
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C25621> <http://purl.obolibrary.org/obo/NCIT_C25162>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C25688> (Status)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P378> "NCI") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NCIT_C25688> "A condition or state at a particular time.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_NHC0> <http://purl.obolibrary.org/obo/NCIT_C25688> "C25688")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P106> <http://purl.obolibrary.org/obo/NCIT_C25688> "Qualitative Concept")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P107> <http://purl.obolibrary.org/obo/NCIT_C25688> "Status")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P108> <http://purl.obolibrary.org/obo/NCIT_C25688> "Status")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P207> <http://purl.obolibrary.org/obo/NCIT_C25688> "C0449438")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P322> <http://purl.obolibrary.org/obo/NCIT_C25688> "CTRP")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P366> <http://purl.obolibrary.org/obo/NCIT_C25688> "Status")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P383> "DN") Annotation(<http://purl.obolibrary.org/obo/NCIT_P384> "CTRP") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCIT_C25688> "Status")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P383> "PT") Annotation(<http://purl.obolibrary.org/obo/NCIT_P384> "NCI") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCIT_C25688> "Status")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P383> "SY") Annotation(<http://purl.obolibrary.org/obo/NCIT_P384> "caDSR") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCIT_C25688> "Status")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/NCIT_C25688> <http://purl.obolibrary.org/obo/NCIT_C116977>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/NCIT_C25688> <http://purl.obolibrary.org/obo/NCIT_C142799>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C25688> "Status")
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C25688> <http://purl.obolibrary.org/obo/NCIT_C20189>)
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C25720> (Zip Code)
 
@@ -8366,6 +8467,19 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C9305> "Malignant Neoplasm")
 EquivalentClasses(<http://purl.obolibrary.org/obo/NCIT_C9305> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCIT_C7062> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/NCIT_R105> <http://purl.obolibrary.org/obo/NCIT_C12917>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/NCIT_R108> <http://purl.obolibrary.org/obo/NCIT_C36115>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/NCIT_R142> <http://purl.obolibrary.org/obo/NCIT_C36122>)))
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C9305> <http://purl.obolibrary.org/obo/NCIT_C7062>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C95018> (Use)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P378> "NCI") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NCIT_C95018> "To put into action or service.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_NHC0> <http://purl.obolibrary.org/obo/NCIT_C95018> "C95018")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P106> <http://purl.obolibrary.org/obo/NCIT_C95018> "Activity")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P108> <http://purl.obolibrary.org/obo/NCIT_C95018> "Use")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/NCIT_P208> <http://purl.obolibrary.org/obo/NCIT_C95018> "CL449155")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P383> "SY") Annotation(<http://purl.obolibrary.org/obo/NCIT_P384> "NCI") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCIT_C95018> "Employ")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P383> "PT") Annotation(<http://purl.obolibrary.org/obo/NCIT_P384> "NCI") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCIT_C95018> "Use")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/NCIT_P383> "SY") Annotation(<http://purl.obolibrary.org/obo/NCIT_P384> "caDSR") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCIT_C95018> "Use")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C95018> "Use")
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C95018> <http://purl.obolibrary.org/obo/NCIT_C25404>)
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C95544> (Dressing)
 

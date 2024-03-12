@@ -122,6 +122,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000073>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000080>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003674>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003824>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0005575>))
@@ -130,6 +131,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0008150>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0016301>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0016740>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0016772>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0022414>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0032501>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0032991>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0000063>))
@@ -148,9 +150,14 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0015005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0045000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0045002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000117>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000125>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001241>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001548>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001708>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001995>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002198>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
@@ -2337,6 +2344,11 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000080> "com
 SubClassOf(<http://purl.obolibrary.org/obo/COB_0000080> <http://purl.obolibrary.org/obo/BFO_0000040>)
 SubClassOf(Annotation(rdfs:comment ">=2 parts (not we cannot use cardinality with transitive properties)") <http://purl.obolibrary.org/obo/COB_0000080> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/COB_0000013>))
 
+# Class: <http://purl.obolibrary.org/obo/GO_0000003> (reproduction)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0000003> "reproduction")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0000003> <http://purl.obolibrary.org/obo/GO_0008150>)
+
 # Class: <http://purl.obolibrary.org/obo/GO_0003674> (molecular_function)
 
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0003674> "Note that, in addition to forming the root of the molecular function ontology, this term is recommended for use for the annotation of gene products whose molecular function is unknown. When this term is used for annotation, it indicates that no information was available about the molecular function of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this. Despite its name, this is not a type of 'function' in the sense typically defined by upper ontologies such as Basic Formal Ontology (BFO). It is instead a BFO:process carried out by a single gene product or complex.")
@@ -2392,6 +2404,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0016740> <http://purl.obolibrary.o
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0016772> "Note that this term encompasses all kinase activities, as well as activities that transfer other phosphorus-containing groups such as diphosphate or nucleotides.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0016772> "transferase activity, transferring phosphorus-containing groups")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0016772> <http://purl.obolibrary.org/obo/GO_0016740>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0022414> (reproductive process)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0022414> "reproductive process")
+EquivalentClasses(<http://purl.obolibrary.org/obo/GO_0022414> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0008150> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0000003>)))
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0022414> <http://purl.obolibrary.org/obo/GO_0008150>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0022414> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0000003>))
 
 # Class: <http://purl.obolibrary.org/obo/GO_0032501> (multicellular organismal process)
 
@@ -2575,6 +2594,24 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000001> "
 SubClassOf(Annotation(rdfs:comment "We should name the inverse in COB and avoid the confusing inverse(..) construct") <http://purl.obolibrary.org/obo/PATO_0000001> ObjectSomeValuesFrom(ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000053>) owl:Thing))
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000001> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PATO_0000001>))
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0000051> (morphology)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000051> "morphology")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000051> <http://purl.obolibrary.org/obo/PATO_0001241>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000117> (size)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000117> "size")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000117> <http://purl.obolibrary.org/obo/PATO_0000051>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000125> (mass)
+
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PATO_0000125> "For any biological use of PATO, the concept that should be used is 'mass' and not 'weight'. For example, increased weight of an organism.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000125> "mass"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000125> "mass")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000125> <http://purl.obolibrary.org/obo/PATO_0001018>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000125> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/BFO_0000040>))
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0001018> (physical quality)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001018> "physical quality")
@@ -2590,6 +2627,16 @@ SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001241> <http://purl.obolibrary
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001548> "quality of a liquid")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001548> <http://purl.obolibrary.org/obo/PATO_0002198>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001708> (1-D extent)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001708> "1-D extent")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001708> <http://purl.obolibrary.org/obo/PATO_0000117>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001995> (organismal quality)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001995> "organismal quality")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001995> <http://purl.obolibrary.org/obo/PATO_0001241>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002198> (quality of a substance)
 
