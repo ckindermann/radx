@@ -6,14 +6,17 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:schema="https://schema.org/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:bmir-radx="https://bmir-radx.github.io/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/radx/radx-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/radx/releases/2024-03-11/radx-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/radx/releases/2024-03-12/radx-simple.owl"/>
         <terms:description>None</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>RADx-demo</terms:title>
-        <owl:versionInfo>2024-03-11</owl:versionInfo>
+        <owl:versionInfo>2024-03-12</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -64,6 +67,12 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -91,6 +100,59 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- https://bmir-radx.github.io/isInSection -->
+
+    <owl:AnnotationProperty rdf:about="https://bmir-radx.github.io/isInSection"/>
+    
+
+
+    <!-- https://schema.org/identifier -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/identifier"/>
+    
+
+
+    <!-- https://schema.org/text -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/text"/>
+    
+
+
+    <!-- https://schema.org/value -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/value"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://bmir-radx.github.io/isAssociatedWith -->
+
+    <owl:ObjectProperty rdf:about="https://bmir-radx.github.io/isAssociatedWith"/>
     
 
 

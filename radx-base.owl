@@ -7,14 +7,17 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:dcterms="http://purl.org/dc/terms/">
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:schema="https://schema.org/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:bmir-radx="https://bmir-radx.github.io/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/radx/radx-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/radx/releases/2024-03-11/radx-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/radx/releases/2024-03-12/radx-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>RADx-demo</dcterms:title>
-        <owl:versionInfo>2024-03-11</owl:versionInfo>
+        <owl:versionInfo>2024-03-12</owl:versionInfo>
     </owl:Ontology>
     
 
